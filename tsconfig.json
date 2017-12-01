@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "target": "esnext",
+      "module": "commonjs",
+      "jsx": "react",
+      "allowJs": true,
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "strictNullChecks": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitThis": true
+    }
+  }
+  
