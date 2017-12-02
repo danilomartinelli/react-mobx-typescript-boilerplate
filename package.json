@@ -1,15 +1,25 @@
 {
-  "name": "react-boilerplate",
+  "name": "mobx-react-router4-typescript-sass-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Boilerplate React/Mobx with Router v4, Sass and Typescript",
+  "main": "index.tsx",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --hot --progress --colors",
     "start": "NODE_ENV=production webpack"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danilomartinelli/mobx-react-router4-typescript-sass-boilerplate.git"
+  },
+  "keywords": [
+    "mobx",
+    "react",
+    "boilerplate",
+    "sass",
+    "typescript"
+  ],
+  "author": "Danilo Martinelli",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^8.0.53",
     "@types/react": "^16.0.25",
