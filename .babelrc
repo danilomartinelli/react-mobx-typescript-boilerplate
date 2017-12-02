@@ -1,6 +1,13 @@
 {
-    "presets": [
-        "env",
-        "react"
-    ]
-}
+	"passPerPreset": true,
+	"presets": [
+	  {
+		"plugins": ["transform-regenerator"]
+	  },
+	  {
+		"plugins": ["mobx-deep-action"]
+	  },
+	  "env",
+	  "react"
+	]
+  }
