@@ -7,6 +7,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const DEV_MODE = process.env.NODE_ENV !== "production";
+const PORT = process.env.PORT || 9000;
 
 module.exports = {
     entry: [
@@ -73,7 +74,7 @@ module.exports = {
     devServer: {
         contentBase: './dist',
         compress: true,
-        port: 9000,
+        port: PORT,
         historyApiFallback: true,
         hot: true,
     },
