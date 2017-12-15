@@ -1,16 +1,12 @@
 {
 	"passPerPreset": true,
 	"presets": [
-	  {
-		"plugins": ["transform-regenerator"]
-	  },
-	  {
-		"plugins": ["mobx-deep-action"]
-		},
-		{
-		"plugins": ["transform-object-rest-spread"]
-		},
 	  "env",
 	  "react"
+	],
+	"plugins": [
+			"transform-regenerator",
+			"mobx-deep-action",
+			"transform-object-rest-spread"
 	]
-  }
+}
