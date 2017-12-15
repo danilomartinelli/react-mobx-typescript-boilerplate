@@ -6,7 +6,10 @@
 	  },
 	  {
 		"plugins": ["mobx-deep-action"]
-	  },
+		},
+		{
+		"plugins": ["transform-object-rest-spread"]
+		},
 	  "env",
 	  "react"
 	]
