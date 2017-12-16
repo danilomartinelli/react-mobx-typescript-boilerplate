@@ -25,6 +25,8 @@ if (process.env.NODE_ENV !== "production") {
 	console.log("Staging Mode");
 }
 
+require("babel-polyfill");
+
 ReactDOM.render(
 	<Provider {...rootStore}>
 		<Router history={history}>
