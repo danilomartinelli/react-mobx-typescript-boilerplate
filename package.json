@@ -4,7 +4,7 @@
   "description": "Boilerplate React/Mobx with Router v4, Sass and Typescript",
   "main": "index.tsx",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --hot --progress --colors",
+    "dev": "NODE_ENV=development webpack-dev-server --progress --colors",
     "start": "NODE_ENV=production webpack"
   },
   "repository": {
