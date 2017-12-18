@@ -8,7 +8,7 @@
 - Sass
 - Typescript
 - Webpack 3 with Uglify, Imagemin and FaviconsWebpackPlugin
-- Babel with ESNEXT, babel-plugin-mobx-deep-action and Rest Spread Plugin.
+- Babel with ESNEXT, Rest Spread Plugin and Transform Regenerator.
 
 ## TODO
 

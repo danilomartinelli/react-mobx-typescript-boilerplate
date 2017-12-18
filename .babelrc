@@ -6,7 +6,6 @@
 	],
 	"plugins": [
 			"transform-regenerator",
-			"mobx-deep-action",
 			"transform-object-rest-spread"
 	]
 }
