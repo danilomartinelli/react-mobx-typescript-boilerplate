@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { useStrict } from "mobx";
 import { Provider } from "mobx-react";
 import { Router } from "react-router";
 import { RouterStore, syncHistoryWithStore } from "mobx-react-router";
@@ -20,7 +19,6 @@ const rootStore = {
 const browserHistory = createBrowserHistory();
 const history = syncHistoryWithStore(browserHistory, routerStore);
 
-useStrict(true);
 if (process.env.NODE_ENV !== "production") {
 	console.log("Staging Mode");
 }
