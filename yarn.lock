@@ -6,9 +6,13 @@
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.6.2.tgz#12cfaba693ba20f114ed5765467ff25fdf67ddb0"
 
-"@types/node@*", "@types/node@^8.5.1":
+"@types/node@*":
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.1.tgz#4ec3020bcdfe2abffeef9ba3fbf26fca097514b5"
+
+"@types/node@^8.5.2":
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.2.tgz#83b8103fa9a2c2e83d78f701a9aa7c9539739aa5"
 
 "@types/react-dom@^16.0.3":
   version "16.0.3"
@@ -17,9 +21,9 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react-router@^4.0.19":
-  version "4.0.19"
-  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-4.0.19.tgz#4258eb59a9c3a01b5adf1bf9b14f068a7699bbb6"
+"@types/react-router@^4.0.20":
+  version "4.0.20"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-4.0.20.tgz#3404f54e44bba2239ea4320ea701d86d92f05486"
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
