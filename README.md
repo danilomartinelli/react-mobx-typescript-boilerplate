@@ -3,12 +3,21 @@
 ## Features
 
 - React 16.2.0
-- Mobx 3.3.2
-- react-router 4.2.0
+- Mobx 3.4.1
+- React Router 4.2.0
 - Sass
-- Typescript
-- Webpack 3 with Uglify, Imagemin and FaviconsWebpackPlugin
-- Babel with ESNEXT, Rest Spread Plugin and Transform Regenerator.
+- Hot Reload
+- Source Map
+- Typescript 2.6.2
+    - ESNEXT
+    - Linter
+- Webpack 3.10.0
+    - Uglify
+    - Imagemin
+    - Favicons Webpack Plugin
+- Babel 6.26.0
+    - Rest Spread Plugin
+    - Transform Regenarator
 
 ## TODO
 
