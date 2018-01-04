@@ -21,8 +21,8 @@
   "author": "Danilo Martinelli",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^8.5.2",
-    "@types/react": "^16.0.31",
+    "@types/node": "^8.5.5",
+    "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
     "@types/react-router": "^4.0.20",
     "babel-core": "^6.26.0",
