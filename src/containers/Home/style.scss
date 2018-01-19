@@ -1,0 +1,33 @@
+@import "global-style.scss";
+
+.container {
+    padding: 20px;
+    
+    .home {
+        display: flex;
+        justify-content: space-around;
+
+        .counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .count {
+                font-size: 50px;
+                color: $gray;
+            }
+
+            .rowButton {
+                display: flex;
+                justify-content: space-between;
+                width: 220px;
+
+                .button {
+                    height: 50px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

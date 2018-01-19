@@ -1,0 +1,31 @@
+@import "global-style.scss";
+
+.container {
+    padding: 20px;
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        .imgContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .image {
+                max-width: 200px;
+                max-height: 200px;
+                height: auto;
+                width: auto;
+            }
+        }
+
+        .content {
+            color: $gray;
+
+            .title {
+                font-size: 20px;
+                color: $blue;
+            }
+        }
+    }
+}
