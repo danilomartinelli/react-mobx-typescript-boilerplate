@@ -22,7 +22,7 @@
   "author": "Danilo Martinelli",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^22.0.1",
+    "@types/jest": "^22.1.0",
     "@types/node": "^9.3.0",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
@@ -45,7 +45,7 @@
     "react-hot-loader": "^4.0.0-beta.14",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
-    "ts-loader": "^3.3.0",
+    "ts-loader": "^3.3.1",
     "typescript": "^2.6.2",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.6.2",
