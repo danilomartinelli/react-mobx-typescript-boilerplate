@@ -7,7 +7,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const DEV_MODE = process.env.NODE_ENV !== "production";
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 3000;
 
 module.exports = {
     entry: [
