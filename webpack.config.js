@@ -19,7 +19,7 @@ module.exports = {
             { enforce: 'pre', test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
             { test: /\.tsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
             {
-                test: /\.scss$/,
+                test: /\.s?css$/,
                 exclude: /node_modules/,
                 loader: combineLoaders([
                     {
