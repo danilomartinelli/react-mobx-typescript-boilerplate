@@ -12,7 +12,7 @@ interface IProps {
 
 @inject("counterStore")
 @observer
-export default class About extends React.Component<IProps, {}> {
+export default class Home extends React.Component<IProps, {}> {
 	@computed private get count() {
 		return "Number: " + this.props.counterStore.count;
 	}
