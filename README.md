@@ -1,5 +1,22 @@
 # mobx-react-router4-typescript-sass-boilerplate
 
+## Getting Start
+
+- Clone the repository
+```
+git clone --depth=1 https://github.com/danilomartinelli/mobx-react-router4-typescript-sass-boilerplate.git <project_name>
+```
+- Install dependencies
+```
+cd <project_name>
+npm install
+```
+- Run the project
+```
+npm run dev
+```
+Navigate to `http://localhost:3000`
+
 ## Features
 
 - React 16.2.0
