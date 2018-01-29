@@ -19,7 +19,7 @@ module.exports = {
             { enforce: 'pre', test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
             { test: /\.tsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
             {
-                test: /\.s?css$/,
+                test: /\.scss$/,
                 exclude: /node_modules/,
                 loader: combineLoaders([
                     {
@@ -41,6 +41,23 @@ module.exports = {
                             ]
                         }
                     }
+                ])
+            },
+            {
+                test: /\.css$/,
+                loader: combineLoaders([
+                    {
+                        loader: "style-loader"
+                    },
+                    {
+                        loader: "css-loader",
+                        query: {
+                            modules: false,
+                            importLoaders: 1,
+                            localIdentName: "[name]__[local]___[hash:base64:5]"
+                        }
+                    }
+
                 ])
             },
             {
