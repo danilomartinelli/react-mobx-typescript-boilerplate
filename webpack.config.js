@@ -16,8 +16,7 @@ module.exports = {
     devtool: DEV_MODE ? 'inline-source-map' : 'eval-cheap-module-source-map',
     module: {
         rules: [
-            { enforce: 'pre', test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
-            { test: /\.tsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
+            { test: /\.tsx?$/, exclude: /node_modules/, use: ['babel-loader', 'ts-loader'] },
             {
                 test: /\.s?css$/,
                 exclude: /node_modules/,
