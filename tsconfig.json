@@ -8,11 +8,10 @@
       "allowJs": true,
       "sourceMap": true,
       "experimentalDecorators": true,
-      "strictNullChecks": true,
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "moduleResolution": "node",
-      "noImplicitThis": true
+      "noImplicitThis": true,
+      "strict": true
     }
   }
-  
