@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const combineLoaders = require("webpack-combine-loaders");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+// const CopyWebpackPlugin = require("copy-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -98,9 +98,9 @@ module.exports = {
         new webpack.DefinePlugin({
             "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "development")
         }),
-        new CopyWebpackPlugin([
-            { from: "src/index.html" }
-        ]),
+        // new CopyWebpackPlugin([
+        //     { from: "src/file.type" }
+        // ]),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             title: "React Boilerplate",
