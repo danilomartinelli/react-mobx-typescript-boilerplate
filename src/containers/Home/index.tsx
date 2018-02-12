@@ -1,5 +1,4 @@
 import * as React from "react";
-import { computed } from "mobx";
 import { inject, observer } from "mobx-react";
 
 import { CounterStore } from "../../stores";
@@ -13,12 +12,13 @@ interface IProps {
 @inject("counterStore")
 @observer
 export default class Home extends React.Component<IProps, {}> {
-	@computed private get count() {
-		return "Number: " + this.props.counterStore.count;
-	}
 
 	private incrementCount = () => {
 		this.props.counterStore.incrementCount();
+	}
+
+	private decrementCount = () => {
+		this.props.counterStore.decrementCount();
 	}
 
 	private resetCount = () => {
@@ -26,14 +26,17 @@ export default class Home extends React.Component<IProps, {}> {
 	}
 
 	public render() {
+		const formatedCount = this.props.counterStore.formatedCount;
+		
 		return (
 			<div className={s.container}>
 				<div className={s.home}>
 					<div className={s.counter}>
-						<span className={s.count}>{this.count}</span>
+						<span className={s.count}>{formatedCount}</span>
 						<div className={s.rowButton}>
 							<button className={s.button} onClick={this.incrementCount}>Increment</button>
 							<button className={s.button} onClick={this.resetCount}>Reset</button>
+							<button className={s.button} onClick={this.decrementCount}>Decrement</button>
 						</div>
 					</div>
 				</div>
