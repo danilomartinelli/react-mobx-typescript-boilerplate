@@ -39,4 +39,6 @@ Navigate to `http://localhost:3000`
 
 ## TODO
 
-- JavaScript testing with Jest
+- [x] Implement React Router DOM
+- [x] Implement Demo Page
+- [ ] Implement Jest
