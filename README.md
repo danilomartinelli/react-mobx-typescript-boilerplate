@@ -42,3 +42,4 @@ Navigate to `http://localhost:3000`
 - [x] Implement React Router DOM
 - [x] Implement Demo Page
 - [ ] Implement Jest
+- [ ] Change Sass loader for PostCSS
