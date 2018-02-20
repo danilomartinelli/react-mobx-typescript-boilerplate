@@ -80,7 +80,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', 'json']
+        extensions: ['.tsx', '.ts', '.js', '.json']
     },
     output: {
         path: __dirname + '/dist',
