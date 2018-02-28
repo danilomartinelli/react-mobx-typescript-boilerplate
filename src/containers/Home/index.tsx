@@ -27,7 +27,7 @@ export default class Home extends React.Component<IProps, {}> {
 
 	public render() {
 		const formatedCount = this.props.counterStore.formatedCount;
-		
+
 		return (
 			<div className={s.container}>
 				<div className={s.home}>
