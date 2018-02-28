@@ -1,9 +1,9 @@
 const webpack = require("webpack");
 const combineLoaders = require("webpack-combine-loaders");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const DEV_MODE = process.env.NODE_ENV !== "production";
@@ -11,12 +11,12 @@ const PORT = process.env.PORT || 3000;
 
 module.exports = {
     entry: [
-        './src/index.tsx'
+        "./src/index.tsx"
     ],
-    devtool: DEV_MODE ? 'inline-source-map' : 'eval-cheap-module-source-map',
+    devtool: DEV_MODE ? "cheap-module-eval-source-map" : "",
     module: {
         rules: [
-            { test: /\.tsx?$/, exclude: /node_modules/, use: ['babel-loader', 'ts-loader'] },
+            { test: /\.tsx?$/, exclude: /node_modules/, use: ["babel-loader", "ts-loader"] },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
@@ -63,7 +63,7 @@ module.exports = {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: "file-loader",
                         options: {}
                     }
                 ]
@@ -72,7 +72,7 @@ module.exports = {
                 test: /\.(ttf|eot|woff)(\?v=[0-9].[0-9].[0-9])?$/,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: "file-loader",
                         options: {}
                     }
                 ]
@@ -80,15 +80,15 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.json']
+        extensions: [".tsx", ".ts", ".js", ".json"]
     },
     output: {
-        path: __dirname + '/dist',
-        publicPath: '/',
-        filename: 'bundle.[hash].js'
+        path: __dirname + "/dist",
+        publicPath: "/",
+        filename: "bundle.[hash].js"
     },
     devServer: {
-        contentBase: './dist',
+        contentBase: "./dist",
         compress: true,
         port: PORT,
         historyApiFallback: true,
