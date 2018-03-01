@@ -13,5 +13,11 @@
       "moduleResolution": "node",
       "noImplicitThis": true,
       "strict": true
-    }
+    },
+    "include": [
+      "./src/**/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
   }
