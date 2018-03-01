@@ -16,7 +16,12 @@ module.exports = {
     devtool: DEV_MODE ? "cheap-module-eval-source-map" : "",
     module: {
         rules: [
-            { test: /\.tsx?$/, exclude: /node_modules/, use: ["babel-loader", "ts-loader"] },
+            { test: /\.tsx?$/, exclude: /node_modules/, use: ["babel-loader", {
+                use: "ts-loader",
+                options: {
+                    configFile: DEV_MODE ? "./tsconfig.json" : "./tsconfig.deploy.json"
+                }
+            }] },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
@@ -98,13 +103,13 @@ module.exports = {
         new webpack.DefinePlugin({
             "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "development")
         }),
-        /* 
+        /*
             Copy files from src to dist
         */
             // new CopyWebpackPlugin([
             //     { from: "src/file.type" }
             // ]),
-        /* 
+        /*
             END
         */
         new HtmlWebpackPlugin({
