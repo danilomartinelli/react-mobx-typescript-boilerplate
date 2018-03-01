@@ -20,11 +20,11 @@ Navigate to `http://localhost:3000`
 ## Features
 
 - React 16.2.0
-- Mobx 3.4.1
+- React Hot Loader
+- Mobx 3.6.1
 - React Router 4.2.0
     - React Router DOM 4.2.2
 - Sass
-- Hot Reload
 - Source Map
 - Typescript 2.6.2
     - ESNEXT
@@ -41,5 +41,6 @@ Navigate to `http://localhost:3000`
 
 - [x] Implement React Router DOM
 - [x] Implement Demo Page
+- [x] Implement React Hot Loader
 - [ ] Implement Jest
 - [ ] Change Sass loader for PostCSS
