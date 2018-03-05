@@ -3,7 +3,6 @@ const combineLoaders = require("webpack-combine-loaders");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const DEV_MODE = process.env.NODE_ENV !== "production";
@@ -13,6 +12,7 @@ module.exports = {
     entry: [
         "./src/index.tsx"
     ],
+    mode: DEV_MODE ? "development" : "production",
     devtool: DEV_MODE ? "cheap-module-eval-source-map" : "",
     module: {
         rules: [
@@ -124,9 +124,5 @@ module.exports = {
             },
             test: /\.(jpe?g|png|gif|svg)$/i
         }),
-        new FaviconsWebpackPlugin({
-            logo: "./src/assets/favicon/favicon.png",
-            inject: true,
-        })
     ]
 };
