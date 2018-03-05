@@ -27,11 +27,10 @@ export default class About extends React.Component<{}, {}> {
 								<li>ESNEXT</li>
 								<li>Linter</li>
 							</ul>
-							<li>Webpack 3.10.0</li>
+							<li>Webpack 4</li>
 							<ul>
 								<li>Uglify</li>
 								<li>Imagemin</li>
-								<li>Favicons Webpack Plugin</li>
 							</ul>
 							<li>Babel 6.26.0</li>
 							<ul>

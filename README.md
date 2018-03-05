@@ -29,10 +29,9 @@ Navigate to `http://localhost:3000`
 - Typescript 2.6.2
     - ESNEXT
     - Linter
-- Webpack 3.10.0
+- Webpack 4
     - Uglify
     - Imagemin
-    - Favicons Webpack Plugin
 - Babel 6.26.0
     - Rest Spread Plugin
     - Transform Regenarator
@@ -42,5 +41,7 @@ Navigate to `http://localhost:3000`
 - [x] Implement React Router DOM
 - [x] Implement Demo Page
 - [x] Implement React Hot Loader
+- [x] Upgrade to Webpack 4
+- [ ] Implement favicon plugin
 - [ ] Implement Jest
 - [ ] Change Sass loader for PostCSS
