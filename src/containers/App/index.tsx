@@ -9,13 +9,13 @@ import About from "../About";
 require("./style.scss");
 
 const App = () =>
-	<div>
+	<React.Fragment>
 		<Header />
 		<Switch>
 			<Route exact path="/" render={() => <Redirect to="/home" />} />
 			<Route path="/home" component={Home} />
 			<Route path="/about" component={About} />
 		</Switch>
-	</div>;
+	</React.Fragment>;
 
 export default hot(module)(App);
