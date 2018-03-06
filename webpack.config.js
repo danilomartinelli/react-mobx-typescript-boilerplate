@@ -97,6 +97,7 @@ module.exports = {
         compress: true,
         port: PORT,
         historyApiFallback: true,
+        open: true,
     },
     plugins: [
         ...(!DEV_MODE ? [new UglifyJsPlugin()] : []),
