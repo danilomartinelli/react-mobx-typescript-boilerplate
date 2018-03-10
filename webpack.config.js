@@ -116,7 +116,6 @@ module.exports = {
         */
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            title: "React Boilerplate",
             filename: "index.html",
         }),
         new WebappWebpackPlugin('./src/assets/favicon/favicon.png'),
