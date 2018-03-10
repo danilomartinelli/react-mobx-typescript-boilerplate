@@ -42,6 +42,6 @@ Navigate to `http://localhost:3000`
 - [x] Implement Demo Page
 - [x] Implement React Hot Loader
 - [x] Upgrade to Webpack 4
-- [ ] Implement favicon plugin
+- [x] Implement favicon plugin
 - [ ] Implement Jest
 - [ ] Change Sass loader for PostCSS
