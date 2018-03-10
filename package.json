@@ -45,6 +45,7 @@
     "typescript": "^2.7.2",
     "uglifyjs-webpack-plugin": "^1.2.2",
     "url-loader": "^1.0.1",
+    "webapp-webpack-plugin": "^1.1.2",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11",
     "webpack-combine-loaders": "^2.0.3",
