@@ -3,11 +3,12 @@ const combineLoaders = require("webpack-combine-loaders");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const WebappWebpackPlugin = require('webapp-webpack-plugin');
+const WebappWebpackPlugin = require("webapp-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin"); Required to copy files from src to dist
 
 const DEV_MODE = process.env.NODE_ENV !== "production";
 const PORT = process.env.PORT || 3000;
+const FAVICON_DIR = "./src/assets/favicon/favicon.png";
 
 module.exports = {
     entry: [
@@ -118,7 +119,7 @@ module.exports = {
             template: "./src/index.html",
             filename: "index.html",
         }),
-        new WebappWebpackPlugin('./src/assets/favicon/favicon.png'),
+        new WebappWebpackPlugin(FAVICON_DIR),
         new ImageminPlugin({
             disable: DEV_MODE,
             pngquant: {
