@@ -2,8 +2,9 @@ const webpack = require("webpack");
 const combineLoaders = require("webpack-combine-loaders");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const WebappWebpackPlugin = require('webapp-webpack-plugin');
+// const CopyWebpackPlugin = require("copy-webpack-plugin"); Required to copy files from src to dist
 
 const DEV_MODE = process.env.NODE_ENV !== "production";
 const PORT = process.env.PORT || 3000;
@@ -118,6 +119,7 @@ module.exports = {
             title: "React Boilerplate",
             filename: "index.html",
         }),
+        new WebappWebpackPlugin('./src/assets/favicon/favicon.png'),
         new ImageminPlugin({
             disable: DEV_MODE,
             pngquant: {
