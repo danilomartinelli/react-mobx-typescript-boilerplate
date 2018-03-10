@@ -31,6 +31,7 @@ export default class About extends React.Component<{}, {}> {
 							<ul>
 								<li>Uglify</li>
 								<li>Imagemin</li>
+								<li>Favicon Plugin</li>
 							</ul>
 							<li>Babel 6.26.0</li>
 							<ul>
