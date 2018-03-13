@@ -34,9 +34,9 @@ export default class Home extends React.Component<IProps, {}> {
 					<div className={s.counter}>
 						<span className={s.count}>{formatedCount}</span>
 						<div className={s.rowButton}>
-							<button className={s.button} onClick={this.incrementCount}>Increment</button>
-							<button className={s.button} onClick={this.resetCount}>Reset</button>
 							<button className={s.button} onClick={this.decrementCount}>Decrement</button>
+							<button className={s.button} onClick={this.resetCount}>Reset</button>
+							<button className={s.button} onClick={this.incrementCount}>Increment</button>
 						</div>
 					</div>
 				</div>
