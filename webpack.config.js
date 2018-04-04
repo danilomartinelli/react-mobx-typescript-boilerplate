@@ -18,12 +18,14 @@ module.exports = {
     devtool: DEV_MODE ? "cheap-module-eval-source-map" : "",
     module: {
         rules: [
-            { test: /\.tsx?$/, exclude: /node_modules/, use: ["babel-loader", {
-                loader: "ts-loader",
-                options: {
-                    configFile: DEV_MODE ? "tsconfig.json" : "tsconfig.deploy.json"
-                }
-            }] },
+            {
+                test: /\.tsx?$/, exclude: /node_modules/, use: [{
+                    loader: "ts-loader",
+                    options: {
+                        configFile: DEV_MODE ? "tsconfig.json" : "tsconfig.deploy.json"
+                    }
+                }]
+            },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
@@ -109,9 +111,9 @@ module.exports = {
         /*
             Copy files from src to dist
         */
-            // new CopyWebpackPlugin([
-            //     { from: "src/file.type" }
-            // ]),
+        // new CopyWebpackPlugin([
+        //     { from: "src/file.type" }
+        // ]),
         /*
             END
         */
