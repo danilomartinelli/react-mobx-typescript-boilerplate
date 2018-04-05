@@ -43,3 +43,11 @@ Navigate to `http://localhost:3000`
 - [x] Remove Babel
 - [ ] Implement Jest
 - [ ] Change Sass loader for PostCSS
+
+## KNOW ISSUES
+
+Flat Map and Flatten doesn't work.
+```
+Array.prototype.flatMap()
+Array.prototype.flatten()
+```
