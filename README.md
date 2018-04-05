@@ -19,22 +19,19 @@ Navigate to `http://localhost:3000`
 
 ## Features
 
-- React 16.2.0
+- React 16
 - React Hot Loader
-- Mobx 3.6.1
-- React Router 4.2.0
-    - React Router DOM 4.2.2
+- Mobx 4
+- React Router 4
+    - React Router DOM
 - Sass
 - Source Map
-- Typescript 2.6.2
+- Typescript 2.8
     - ESNEXT
     - Linter
 - Webpack 4
     - Uglify
     - Imagemin
-- Babel 6.26.0
-    - Rest Spread Plugin
-    - Transform Regenarator
 
 ## TODO
 
@@ -43,5 +40,6 @@ Navigate to `http://localhost:3000`
 - [x] Implement React Hot Loader
 - [x] Upgrade to Webpack 4
 - [x] Implement favicon plugin
+- [x] Remove Babel
 - [ ] Implement Jest
 - [ ] Change Sass loader for PostCSS
