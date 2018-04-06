@@ -42,7 +42,6 @@ Navigate to `http://localhost:3000`
 - [x] Implement favicon plugin
 - [x] Remove Babel
 - [ ] Implement Jest
-- [ ] Change Sass loader for PostCSS
 
 ## KNOW ISSUES
 
