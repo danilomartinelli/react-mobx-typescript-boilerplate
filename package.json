@@ -21,9 +21,9 @@
   "author": "Danilo Martinelli",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^9.6.2",
-    "@types/react": "^16.3.5",
-    "@types/react-dom": "^16.0.4",
+    "@types/node": "^9.6.4",
+    "@types/react": "^16.3.8",
+    "@types/react-dom": "^16.0.5",
     "@types/react-router": "^4.0.23",
     "@types/react-router-dom": "^4.2.6",
     "copy-webpack-plugin": "^4.5.1",
