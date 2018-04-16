@@ -6,7 +6,7 @@
 ```
 git clone --depth=1 https://github.com/danilomartinelli/mobx-react-router4-typescript-sass-boilerplate.git <project_name>
 ```
-- Install dependencies
+- Install dependencies (You can use yarn instead of npm)
 ```
 cd <project_name>
 npm install
