@@ -2,9 +2,9 @@ import * as React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { hot } from "react-hot-loader";
 
-import Header from "../../components/Header";
-import Home from "../Home";
-import About from "../About";
+import { Header } from "../../components/Header";
+import { Home } from "../Home";
+import { About } from "../About";
 
 require("./style.scss");
 

@@ -4,7 +4,7 @@ const s = require("./style.scss");
 const reactImg = require("../../assets/img/react.svg");
 const mobxImg = require("../../assets/img/mobx.png");
 
-export default class About extends React.Component<{}, {}> {
+export class About extends React.Component<{}, {}> {
 	public render() {
 		return (
 			<div className={s.container}>

@@ -11,7 +11,7 @@ interface IProps {
 
 @inject("counterStore")
 @observer
-export default class Home extends React.Component<IProps, {}> {
+export class Home extends React.Component<IProps, {}> {
 
 	private incrementCount = () => {
 		this.props.counterStore.incrementCount();
