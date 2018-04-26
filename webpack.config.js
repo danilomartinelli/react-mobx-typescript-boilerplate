@@ -15,7 +15,7 @@ module.exports = {
         "./src/index.tsx"
     ],
     mode: DEV_MODE ? "development" : "production",
-    devtool: DEV_MODE ? "cheap-module-eval-source-map" : "",
+    devtool: DEV_MODE ? "source-map" : "",
     module: {
         rules: [
             {
