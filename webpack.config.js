@@ -9,6 +9,7 @@ const WebappWebpackPlugin = require("webapp-webpack-plugin");
 const NODE_ENV = process.env.NODE_ENV || "development";
 const DEV_MODE = NODE_ENV !== "production";
 const PORT = process.env.PORT || 3000;
+
 const FAVICON_DIR = "./src/assets/favicon/favicon.png";
 
 module.exports = {
@@ -122,7 +123,7 @@ module.exports = {
 			template: "./src/index.html",
 			filename: "index.html",
 		}),
-		new WebappWebpackPlugin(FAVICON_DIR),
+		...(FAVICON_DIR ? [new WebappWebpackPlugin(FAVICON_DIR)] : []),
 		new ImageminPlugin({
 			disable: DEV_MODE,
 			pngquant: {
