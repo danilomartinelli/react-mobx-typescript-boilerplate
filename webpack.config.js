@@ -6,7 +6,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebappWebpackPlugin = require("webapp-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin"); Required to copy files from src to dist
 
-const DEV_MODE = process.env.NODE_ENV !== "production";
+const NODE_ENV = process.env.NODE_ENV || "development";
+const DEV_MODE = NODE_ENV !== "production";
 const PORT = process.env.PORT || 3000;
 const FAVICON_DIR = "./src/assets/favicon/favicon.png";
 
@@ -105,9 +106,7 @@ module.exports = {
 	plugins: [
 		...(!DEV_MODE ? [new UglifyJsPlugin()] : []),
 		new webpack.DefinePlugin({
-			"process.env.NODE_ENV": JSON.stringify(
-				process.env.NODE_ENV || "development",
-			),
+			"process.env.NODE_ENV": JSON.stringify(NODE_ENV),
 			"process.env.PORT": JSON.stringify(PORT),
 		}),
 		/*
