@@ -21,7 +21,7 @@
   "author": "Danilo Martinelli",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^10.1.0",
+    "@types/node": "^10.1.2",
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
     "@types/react-router": "^4.0.25",
