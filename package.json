@@ -27,7 +27,7 @@
     "@types/react-router": "^4.0.25",
     "@types/react-router-dom": "^4.2.6",
     "copy-webpack-plugin": "^4.5.1",
-    "core-js": "^2.5.6",
+    "core-js": "^2.5.7",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
@@ -43,17 +43,17 @@
     "uglifyjs-webpack-plugin": "^1.2.5",
     "url-loader": "^1.0.1",
     "webapp-webpack-plugin": "^2.1.0",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
     "webpack-combine-loaders": "^2.0.3",
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "mobx": "^4.2.1",
+    "mobx": "^4.3.0",
     "mobx-react": "^5.1.2",
-    "mobx-react-router": "^4.0.3",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "mobx-react-router": "^4.0.4",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   }
