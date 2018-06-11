@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const combineLoaders = require("webpack-combine-loaders");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebappWebpackPlugin = require("webapp-webpack-plugin");
@@ -105,7 +104,6 @@ module.exports = {
 		open: true,
 	},
 	plugins: [
-		...(!DEV_MODE ? [new UglifyJsPlugin()] : []),
 		new webpack.DefinePlugin({
 			"process.env.NODE_ENV": JSON.stringify(NODE_ENV),
 			"process.env.PORT": JSON.stringify(PORT),
