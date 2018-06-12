@@ -1,33 +1,34 @@
 @import "global-style.scss";
 
 .container {
-    padding: 20px;
-    
-    .home {
-        display: flex;
-        justify-content: space-around;
+	padding: 20px;
 
-        .counter {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+	.home {
+		display: flex;
+		justify-content: space-around;
 
-            .count {
-                font-size: 50px;
-                color: $gray;
-            }
+		.counter {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
 
-            .rowButton {
-                display: flex;
-                justify-content: space-between;
-                width: 320px;
+			.count {
+				font-size: 50px;
+				color: $gray;
+			}
 
-                .button {
-                    height: 50px;
-                    width: 100px;
-                }
-            }
-        }
-    }
+			.rowButton {
+				display: flex;
+				justify-content: space-between;
+				width: 480px;
+
+				.button {
+					height: 50px;
+					width: 150px;
+					text-align: center;
+				}
+			}
+		}
+	}
 }
