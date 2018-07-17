@@ -6,12 +6,16 @@ import { Header } from "../../components/Header";
 import { Home } from "../Home";
 import { About } from "../About";
 
-require("./style.scss");
+import "normalize.css";
+import { TypographyStyle, GoogleFont } from "react-typography";
+import { typography } from "../../utils/typography";
 
 class App extends React.Component {
 	public render() {
 		return (
 			<React.Fragment>
+				<TypographyStyle typography={typography} />
+				<GoogleFont typography={typography} />
 				<Header />
 				<Switch>
 					<Route exact path="/" render={() => <Redirect to="/home" />} />

@@ -30,29 +30,6 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.scss$/,
-				exclude: /node_modules/,
-				loader: combineLoaders([
-					{
-						loader: "style-loader",
-					},
-					{
-						loader: "css-loader",
-						query: {
-							modules: true,
-							importLoaders: 1,
-							localIdentName: "[name]__[local]___[hash:base64:5]",
-						},
-					},
-					{
-						loader: "sass-loader",
-						query: {
-							includePaths: ["./src"],
-						},
-					},
-				]),
-			},
-			{
 				test: /\.css$/,
 				loader: combineLoaders([
 					{
