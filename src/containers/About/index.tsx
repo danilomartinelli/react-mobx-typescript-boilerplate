@@ -1,16 +1,43 @@
 import * as React from "react";
+import styled from "styled-components";
+import { colors } from "../../utils/colors";
 
-const s = require("./style.scss");
 const reactImg = require("../../assets/img/react.svg");
 const mobxImg = require("../../assets/img/mobx.png");
+
+const Container = styled.div`
+	padding: 20px;
+`;
+const Features = styled.div`
+	display: flex;
+	justify-content: space-around;
+`;
+const Content = styled.div`
+	color: ${colors.gray};
+`;
+const Title = styled.span`
+	font-size: 20px;
+	color: ${colors.blue};
+`;
+const ImgContent = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+`;
+const Image = styled.img`
+	max-width: 200px;
+	max-height: 200px;
+	height: auto;
+	width: auto;
+`;
 
 export class About extends React.Component<{}, {}> {
 	public render() {
 		return (
-			<div className={s.container}>
-				<div className={s.features}>
-					<div className={s.content}>
-						<span className={s.title}>Features</span>
+			<Container>
+				<Features>
+					<Content>
+						<Title>Features</Title>
 						<ul>
 							<li>React 16</li>
 							<li>React Hot Loader</li>
@@ -34,13 +61,13 @@ export class About extends React.Component<{}, {}> {
 								<li>Favicon Plugin</li>
 							</ul>
 						</ul>
-					</div>
-					<div className={s.imgContent}>
-						<img className={s.image} src={reactImg} alt="Logo React" />
-						<img className={s.image} src={mobxImg} alt="Logo Mobx" />
-					</div>
-				</div>
-			</div>
+					</Content>
+					<ImgContent>
+						<Image src={reactImg} alt="Logo React" />
+						<Image src={mobxImg} alt="Logo Mobx" />
+					</ImgContent>
+				</Features>
+			</Container>
 		);
 	}
 }
