@@ -1,22 +1,28 @@
 import { observable, action, computed } from "mobx";
+import { RootStore } from "./RootStore";
 
 export class CounterStore {
-	@observable public count: number = 0;
+  protected rootStore: RootStore;
 
-	@action public incrementCount = () => {
-		this.count++;
-	}
+  public constructor(rootStore: RootStore) {
+    this.rootStore = rootStore;
+  }
 
-	@action public decrementCount = () => {
-		this.count--;
-	}
+  @observable public count: number = 0;
 
-	@action public resetCount = () => {
-		this.count = 0;
-	}
+  @action public incrementCount = () => {
+    this.count++;
+  };
 
-	@computed public get formatedCount() {
-		return `Counter: ${this.count}`;
-	}
+  @action public decrementCount = () => {
+    this.count--;
+  };
 
+  @action public resetCount = () => {
+    this.count = 0;
+  };
+
+  @computed public get formatedCount() {
+    return `Counter: ${this.count}`;
+  }
 }
