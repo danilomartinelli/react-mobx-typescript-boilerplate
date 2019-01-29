@@ -5,7 +5,8 @@
   "main": "index.tsx",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --progress --colors --hot",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "upgrade-interactive": "npm-check --update"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.1.5",
     "node-sass": "^4.9.2",
+    "npm-check": "^5.9.0",
     "react-hot-loader": "^4.3.4",
     "style-loader": "^0.21.0",
     "ts-loader": "^4.4.2",
