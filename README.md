@@ -47,7 +47,7 @@ Navigate to `http://localhost:3000`
 - [x] Upgrade to Webpack 4
 - [x] Implement favicon plugin
 - [x] Remove Babel
-- [ ] Implement Styled Components
+- [x] Implement Styled Components
 - [ ] Implement Jest
 - [ ] Implement SSR
 
