@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebappWebpackPlugin = require("webapp-webpack-plugin");
-// const CopyWebpackPlugin = require("copy-webpack-plugin"); Required to copy files from src to dist
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const NODE_ENV = process.env.NODE_ENV || "development";
 const DEV_MODE = NODE_ENV !== "production";
@@ -29,10 +29,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
+        test: /\.(css|sass)$/,
         use: [
           "style-loader",
-          { loader: "css-loader", options: { importLoaders: 2 } }
+          { loader: "css-loader", options: { importLoaders: 1 } },
+          "sass-loader"
         ]
       },
       {
@@ -75,15 +76,7 @@ module.exports = {
       "process.env.NODE_ENV": JSON.stringify(NODE_ENV),
       "process.env.PORT": JSON.stringify(PORT)
     }),
-    /*
-            Copy files from src to dist
-        */
-    // new CopyWebpackPlugin([
-    //     { from: "src/file.type" }
-    // ]),
-    /*
-            END
-        */
+    new CopyWebpackPlugin([]),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html"
