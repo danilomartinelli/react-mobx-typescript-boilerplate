@@ -1,3 +1,5 @@
-declare module "typography";
-declare module "react-typography";
-declare module "typography-theme-alton";
+declare module "*.png";
+declare module "*.svg";
+declare module "*.jpg";
+declare module "*.jpeg";
+declare module "*.gif";

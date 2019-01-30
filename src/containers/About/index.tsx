@@ -2,8 +2,8 @@ import * as React from "react";
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
 
-const reactImg = require("../../assets/img/react.svg");
-const mobxImg = require("../../assets/img/mobx.png");
+import * as reactImg from "../../assets/img/react.svg";
+import * as mobxImg from "../../assets/img/mobx.png";
 
 const Container = styled.div`
   padding: 20px;
@@ -33,6 +33,7 @@ const Image = styled.img`
 
 export class About extends React.Component<{}, {}> {
   public render() {
+    console.log(reactImg, mobxImg);
     return (
       <Container>
         <Features>
@@ -41,16 +42,15 @@ export class About extends React.Component<{}, {}> {
             <ul>
               <li>React 16</li>
               <li>React Hot Loader</li>
-              <li>Mobx 4</li>
+              <li>Mobx 5</li>
               <li>Styled Components</li>
               <li>React Router 4</li>
               <ul>
                 <li>React Router DOM</li>
               </ul>
-              <li>Sass</li>
               <li>Hot Reload</li>
               <li>Source Map</li>
-              <li>Typescript 2.8</li>
+              <li>Typescript 3</li>
               <ul>
                 <li>ESNEXT</li>
                 <li>Linter</li>

@@ -25,17 +25,17 @@ Navigate to `http://localhost:3000`
 
 ## Features
 
-- React 16
+- React 16.7
 - React Hot Loader
-- Mobx 4
+- Mobx 5
 - React Router 4
   - React Router DOM
-- Sass
+- Styled Components 4.1.3
 - Source Map
-- Typescript 2.8
+- Typescript 3.2.4
   - ESNEXT
   - Linter
-- Webpack 4
+- Webpack 4.16.2
   - Uglify
   - Imagemin
 
@@ -44,18 +44,8 @@ Navigate to `http://localhost:3000`
 - [x] Implement React Router DOM
 - [x] Implement Demo Page
 - [x] Implement React Hot Loader
-- [x] Upgrade to Webpack 4
 - [x] Implement favicon plugin
 - [x] Remove Babel
 - [x] Implement Styled Components
 - [ ] Implement Jest
 - [ ] Implement SSR
-
-## KNOW ISSUES
-
-Flat Map and Flatten doesn't work.
-
-```
-Array.prototype.flatMap()
-Array.prototype.flatten()
-```
