@@ -9,6 +9,7 @@ const DEV_MODE = NODE_ENV !== "production";
 const PORT = process.env.PORT || 3000;
 
 const FAVICON_DIR = "./src/assets/favicon/favicon.png";
+const TITLE = "React Boilerplate";
 
 module.exports = {
   entry: ["./src/index.tsx"],
@@ -79,6 +80,7 @@ module.exports = {
     new CopyWebpackPlugin([]),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      title: TITLE,
       filename: "index.html"
     }),
     ...(FAVICON_DIR ? [new WebappWebpackPlugin(FAVICON_DIR)] : []),
