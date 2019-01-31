@@ -33,7 +33,6 @@ const Image = styled.img`
 
 export class About extends React.Component<{}, {}> {
   public render() {
-    console.log(reactImg, mobxImg);
     return (
       <Container>
         <Features>
