@@ -22,7 +22,7 @@
   "author": "Danilo Martinelli",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^10.5.3",
+    "@types/node": "^10.12.20",
     "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.11",
     "@types/react-router": "^4.4.3",
@@ -35,7 +35,7 @@
     "imagemin-webpack-plugin": "^2.4.0",
     "node-sass": "^4.11.0",
     "npm-check": "^5.9.0",
-    "react-hot-loader": "^4.3.4",
+    "react-hot-loader": "^4.6.5",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.3",
