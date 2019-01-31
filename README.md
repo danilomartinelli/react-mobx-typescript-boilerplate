@@ -1,4 +1,4 @@
-# mobx-react-router4-typescript-sass-boilerplate
+# React boilerplate with Mobx, Typescript, Hot Reload and Styled Components
 
 ## Getting Start
 
