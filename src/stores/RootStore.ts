@@ -1,6 +1,6 @@
 import * as stores from "./";
 import { syncHistoryWithStore } from "mobx-react-router";
-import createBrowerhistory from "history/createBrowserHistory";
+import { createBrowserHistory } from "history";
 import { History } from "history";
 
 export class RootStore {
@@ -9,7 +9,7 @@ export class RootStore {
   public counterStore: stores.CounterStore;
 
   public constructor() {
-    const browerHistory = createBrowerhistory();
+    const browerHistory = createBrowserHistory();
 
     this.routerStore = new stores.RouterStore();
     this.history = syncHistoryWithStore(browerHistory, this.routerStore);
